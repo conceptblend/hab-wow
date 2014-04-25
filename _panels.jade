@@ -1,0 +1,11 @@
+
+
+mixin panelFrame
+	.row(class=attributes.class, id=attributes.id)
+		.hab-panel
+			block
+
+
+mixin panelRed
+	+panelFrame.panel-red
+		block
