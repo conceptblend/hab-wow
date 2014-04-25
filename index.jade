@@ -51,7 +51,7 @@ hr
 		| &nbsp;and&nbsp;
 		strong process
 
-	div.panel-group#accordion
+	div.panel-group#accordion.margin-20
 		div.panel.panel-default
 			div.panel-heading
 				h4.panel-title: a(href="#collapseOne", data-toggle="collapse", data-parent="#accordion")
@@ -62,28 +62,186 @@ hr
 		div.panel.panel-default
 			div.panel-heading
 				h4.panel-title: a(href="#collapseTwo", data-toggle="collapse", data-parent="#accordion")
-					| 10 Stakeholder Interviews
+					| 28 Listening labs
 			div#collapseTwo.panel-collapse.collapse
 				div.panel-body
-					p Hello world
+					img.img-responsive(src='img/dilbert-web-design.jpg', alt='')
 		div.panel.panel-default
 			div.panel-heading
 				h4.panel-title: a(href="#collapseThree", data-toggle="collapse", data-parent="#accordion")
-					| 15 Mockups
+					| 10 Wireframes
 			div#collapseThree.panel-collapse.collapse
 				div.panel-body
-					p Hello world
+					p Wireframes are
+					img.img-responsive(src='img/wireframes.png', alt='')
+
+hr
 
 +panelFrame
 	h4 Roles
 	div.row
-		div.col-md-4.col-lg-2.col-sm-3
-			img.img-responsive(src='img/ben.png', alt='')
-			p.text-center.title Project Manager
-		div.col-md-4.col-lg-2.col-sm-3
+		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
 			img.img-responsive(src='img/ben.png', alt='')
 			p.text-center.title Business Analyst 
-		div.col-md-4.col-lg-2.col-sm-3
+		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
 			img.img-responsive(src='img/ben.png', alt='')
-			p.text-center.title Information Architect
+			p.text-center.title Senior Information ArchitectS
+		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
+			img.img-responsive(src='img/ben.png', alt='')
+			p.text-center.title Service Delivery Manager
+		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
+			img.img-responsive(src='img/ben.png', alt='')
+			p.text-center.title User Experience Lead
+
+hr
+
++panelFrame
+	h4 Stakeholders
+	ul
+		li Kim Blanchett (VP, Office of Public Affairs)
+		li Candace Bourque (Director, Communications)
+		li Kaylen Gray (Director, Public Policy)
+		li Mira Fava (VP, Operations)
+		li Tim Doh (Director, IT Services)
+
+hr
+
++panelFrame
+	div.row
+		div.col-lg-5.col-md-6.col-sm-6
+			h4 Doin’ it
+			ul
+				li Business orientation
+				li Existing site and documentation review
+				li Stakeholder interviews
+				li Listening labs
+				li Sketching workshops
+				li Wireframes
+				li Findings presentation
+
+		div.col-lg-5.col-md-6.col-sm-6
+			h4 Not doin’ it
+			ul
+				li Detailed functional and technical requirements documentation
+				li Detailed wireframes and mockups
+				li Content strategy
+				li Technical implementation
+	div.row	
+		div.col-lg-12.margin-20
+			h4 By the way…
+			ul
+				li Access to stakeholders and end users is critical to the success of this project. Let’s schedule these sessions early!
+				li We’ve incorporated 3 days for approvals into the timeline.
+
+	+whatdidwemiss
+
+hr
+
++panelFrame
+	h4 Timeline
+	ul.timeline.margin-20
+		li
+			div.timeline-badge
+				i.glyphicon
+			div.timeline-panel
+				div.timeline-heading
+					h4.timeline-title Week 1
+				div.timeline-body
+					ul
+						li Project kickoff
+						li Business orientation workshop
+						li Review any existing research
+		li
+			div.timeline-badge
+				i.glyphicon
+			div.timeline-panel
+				div.timeline-heading
+					h4.timeline-title Week 2
+				div.timeline-body
+					ul
+						li Interviews with AER internal stakeholders
+		li
+			div.timeline-badge
+				i.glyphicon
+			div.timeline-panel
+				div.timeline-heading
+					h4.timeline-title Week 3
+				div.timeline-body
+					ul
+						li Listening labs with AER employees
+		li
+			div.timeline-badge
+				i.glyphicon
+			div.timeline-panel
+				div.timeline-heading
+					h4.timeline-title Week 4 - 5
+				div.timeline-body
+					ul
+						li Summarize findings
+						li Complete sketches and high-level wireframes
+						li Create presentation
+		li
+			div.timeline-badge
+				i.glyphicon
+			div.timeline-panel
+				div.timeline-heading
+					h4.timeline-title Week 6
+				div.timeline-body
+					ul
+						li Presentation to AER
+
+hr 
+
++panelFrame
+	h4 Fees (expanded budget)
+	table.table.table-striped
+		thead
+			tr
+				td: strong Role
+				td: strong Effort (hours)
+				td: strong Rate
+				td: strong Cost
+		
+		tfoot
+			tr
+				td: strong Total
+				td
+				td 
+				td: strong $55,820
+		tbody
+			tr
+				td User Experience Lead
+				td 30
+				td $185
+				td $5,500
+			tr
+				td Senior Information Architect
+				td 130
+				td $185
+				td $24,050
+			tr
+				td Business Analyst
+				td 130
+				td $185
+				td $24,050
+			tr
+				td Service Delivery Manager
+				td 12
+				td $185
+				td $2,220
+
+hr
+
++panelFrame
+	h4 Signature 
+	p By signing below, the parties accept the terms of this document
+	br
+	p Name:
+	br br
+	p Date:
+
+
+
+
+
 
