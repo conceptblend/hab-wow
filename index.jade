@@ -38,7 +38,7 @@ hr
 	+keyPoint("$55,820", "dollars")
 
 +panelRed
-	p
+	p.text-center
 		| So... if you're going to keep reading, why don't you do it with a Starbucks coffee on us!
 		br
 		br
@@ -55,35 +55,53 @@ hr
 		+accordionPanel("#collapseD", "Business orientation")
 			div#collapseD.panel-collapse.collapse
 				div.panel-body
-					p ...
+					img.img-responsive(src='img/business-orientation.jpg', alt='')
+					br
+					p We get to know your world. We want to know your purpose, how you get things done, and how your business works.
+
 		+accordionPanel("#collapseE", "Site review")
 			div#collapseE.panel-collapse.collapse
 				div.panel-body
 					p ...
+
 		+accordionPanel("#collapseA", "Stakeholder Interviews")
 			div#collapseA.panel-collapse.collapse
 				div.panel-body
-					p Hello world
+					img.img-responsive(src='img/stakeholder-interviews.jpg', alt='')
+					br
+					p These are open conversations with the people that are passionate about how the project turns out. We learn about your big ideas for what our project must achieve.
+
 		+accordionPanel("#collapseB", "Listening labs")
 			div#collapseB.panel-collapse.collapse
 				div.panel-body
-					img.img-responsive(src='img/dilbert-web-design.jpg', alt='')
+					img.img-responsive(src='img/listening-lab.jpg', alt='')
+					br
+					p Listening labs give us the opportunity to observe you and your colleagues working with your portal. We learn what's working, what sucks, and where to reduce friction.
 		+accordionPanel("#collapseF", "Sketching workshops")
 			div#collapseF.panel-collapse.collapse
 				div.panel-body
-					p ...
+					img.img-responsive(src='img/sketching-workshop-2.jpg', alt='')
+					br
+					p This is where we roll up our sleeves and get out the markers. Let's imagine together what your new portal could be.
+
 		+accordionPanel("#collapseC", "Wireframes")
 			div#collapseC.panel-collapse.collapse
 				div.panel-body
-					p Wireframes are
 					img.img-responsive(src='img/wireframes.png', alt='')
+					br
+					p We create detailed diagrams with real content to illustrate where you'll find what you need when you need it.
+
 		+accordionPanel("#collapseG", "Mockups")
 			div#collapseG.panel-collapse.collapse
 				div.panel-body
-					p ...
+					img.img-responsive(src='img/enmax-mockup.jpg', alt='')
+					br
+					p This is where our diagrams become pictures showing how your content will look and feel with your unique brand.
 		+accordionPanel("#collapseH", "Findings presentation")
 			div#collapseH.panel-collapse.collapse
 				div.panel-body
+					//- img
+					br
 					p ...
 +panelFrame
 	div.row
@@ -199,7 +217,7 @@ hr
 hr 
 
 +panelFrame
-	h4 Fees (expanded budget)
+	h4 Fees
 	table.table.table-striped
 		thead
 			tr
@@ -236,6 +254,13 @@ hr
 				td $185
 				td $2,220
 
+hr
+
+.row
+	.hab-panel.col-md-8.col-md-offset-2
+		h4 Anything we missed?
+		p Take one last look and see if there's anything we need to add in or revise.
+		+whatdidwemiss
 hr
 
 +panelFrame
