@@ -2,10 +2,24 @@
 
 mixin panelFrame
 	.row(class=attributes.class, id=attributes.id)
-		.hab-panel.col-md-12
+		.hab-panel.col-md-8.col-md-offset-2
 			block
 
 
 mixin panelRed
 	+panelFrame.panel-red
 		block
+
+
+mixin whatdidwemiss
+	br
+	//-small.text-muted What did we miss?
+	input.form-control(type="text", placeholder="What did we miss?")
+	br
+	button.btn.btn-default(type="button") Add my comment
+
+mixin keyPoint(intNumber, strLabel)
+	p(style="margin-left: 20px;")
+		span.big-number= intNumber
+		| &nbsp;
+		= strLabel
