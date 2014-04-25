@@ -1,5 +1,4 @@
 @import "bootstrap.css";
-@import "bootstrap-theme.css";
 
 @hab-red: #9c162a;
 @hab-dark-grey: #2e3b43;
@@ -13,10 +12,18 @@ body {
 .hab-panel {
 	padding: 20px;
 	
-	h4 { text-transform: uppercase; }	
+	h4 {
+		text-transform: uppercase;
+		color: @hab-red;
+	}	
 }
 
 .fine-print { text-transform: uppercase; }
+
+.big-number {
+	font-size: 200%;
+	font-weight: bold;	
+}
 
 .panel-red {
 	background-color: @hab-red;

@@ -1,16 +1,17 @@
 include _panels.jade
 
-.row
-	.col-md-12
-		h1 hab-wow
-
-
 //- welcome
 +panelFrame
 	h4 Welcome
+	p
+		strong Welcome to Habanero’s web statement of work.
+		| &nbsp;By communicating to you via this web page we aim to make our documentation more readily accessible and more consumable. This WOW effectively communicates our proposal ensuring that all team members from both of our organizations can consume the project structure, the scope, and the approach.
+
+hr
 
 +panelFrame
-	h4 WE HEARD YOU
+	h4 WE&nbsp;
+		strong HEARD YOU
 	p These are the key objectives as we understand them today:
 	ul
 		li Develop strategy and vision for the new AER employee portal - this vision must represent AER’s new mandate and focus
@@ -22,13 +23,30 @@ include _panels.jade
 	//-p.text-muted
 		| These imperatives will be supported by a collection of solution com-ponents as listed in the table below. The intranet is for the most part an enabler of the imperatives; it will not drive the imperatives directly per se. There exists a need for organizational change in parallel to this solution, to drive the business outcomes that are sought. For clar-ity, Habanero is NOT anticipating supporting this organizational change outside of delivering the solution.
 
+	+whatdidwemiss
 hr
 
 +panelFrame
-	h4 key points
+	h4
+		strong key
+		| &nbsp;points
+	p Here are the highlights from the statement of work (because we know you're busy!):
+	+keyPoint(8, "stakeholder interviews")
+	+keyPoint(28, "listening labs")
+	+keyPoint(10, "wireframes")
+	+keyPoint(6, "weeks")
+	+keyPoint("$55,000", "dollars")
 
 +panelRed
-	p qrcoffee
-
+	p So... if you're going to keep reading, why don't you do it with a Starbucks coffee on us!
+	a.btn.btn-default.view-free-coffee(href="#", onclick="return false;") Free coffee!
+	br
+	br
+	#free-coffee.view-free-coffee.hidden
+		p Show this QR code at a nearby Starbucks and redeem a free coffee on Habanero.
+		p QR CODE
 +panelFrame
-	h4 Approach and process
+	h4
+		strong Approach
+		| &nbsp;and&nbsp;
+		strong process
