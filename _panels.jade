@@ -23,3 +23,16 @@ mixin keyPoint(intNumber, strLabel)
 		span.big-number= intNumber
 		| &nbsp;
 		= strLabel
+		
+mixin timelineItem
+	li
+		div.timeline-badge
+			i.glyphicon
+		div.timeline-panel
+			block
+			
+mixin accordionPanel(strId, strLabel)
+	div.panel.panel-default
+		div.panel-heading
+			h4.panel-title: a(href="#{strId}", data-toggle="collapse", data-parent="#accordion")= strLabel
+		block
