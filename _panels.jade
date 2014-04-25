@@ -14,9 +14,10 @@ mixin panelRed
 mixin whatdidwemiss
 	br
 	//-small.text-muted What did we miss?
-	input.form-control(type="text", placeholder="What did we miss?")
-	br
-	button.btn.btn-default(type="button") Add my comment
+	.input-group
+		input.form-control(type="text", placeholder="What did we miss?")
+		span.input-group-btn
+			button.btn.btn-default(type="button") Comment
 
 mixin keyPoint(intNumber, strLabel)
 	p(style="margin-left: 20px;")

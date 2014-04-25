@@ -1,13 +1,14 @@
 include _panels.jade
 
 //- welcome
-+panelFrame
-	h4 Welcome
-	p
-		strong Welcome to Habanero's web statement of work.
-		| &nbsp;By communicating to you via this web page we aim to make our documentation more readily accessible and more consumable. This WOW effectively communicates our proposal ensuring that all team members from both of our organizations can consume the project structure, the scope, and the approach.
+//-.banner
+	| &nbsp;
 
-hr
++panelRed
+	h4 Welcome to
+	h2 Habanero's presentation of work.
+	p We've thought about what you need and we how can help you get there. Read on for all the details and please let us know what you think – you can add comments along the way!
+		//-By communicating to you via this web page we aim to make our documentation more readily accessible and more consumable. This WOW effectively communicates our proposal ensuring that all team members from both of our organizations can consume the project structure, the scope, and the approach.
 
 +panelFrame
 	h4 WE&nbsp;
@@ -50,9 +51,13 @@ hr
 		br
 		br
 		a.btn.btn-default.view-free-coffee-action(href="#", onclick="$(this).addClass('hidden'); $('.view-free-coffee').removeClass('hidden').addClass('show'); return false;") Free coffee!
-		#free-coffee.view-free-coffee.hidden
-			p Show this QR code at a nearby Starbucks and redeem a free coffee on Habanero.
-			img.img-responsive(src="/img/starbucks-qr.jpg")
+	#free-coffee.view-free-coffee.hidden
+		.row
+			.col-xs-12.col-sm-6.col-sm-offset-3.col-md-6.col-md-offset-3.col-lg-6.col-offset-3
+				br
+				br
+				p.text-center Show this QR code at a nearby Starbucks and redeem a free coffee on Habanero.
+				img.img-responsive(src='img/starbucks-qr.jpg', alt='')
 +panelFrame
 	h4
 		| How&nbsp;
@@ -174,7 +179,8 @@ hr
 hr
 
 +panelFrame
-	h4 Timeline
+	h4 Our&nbsp;
+		strong journey
 	ul.timeline.margin-20
 		+timelineItem
 			.timeline-heading
@@ -224,7 +230,7 @@ hr
 hr 
 
 +panelFrame
-	h4 Fees
+	h4 What's the damage?
 	table.table.table-striped
 		thead
 			tr
@@ -261,14 +267,10 @@ hr
 				td $185
 				td $2,220
 
-hr
-
-.row
-	.hab-panel.col-md-8.col-md-offset-2
-		h4 Anything we missed?
-		p Take one last look and see if there's anything we need to add in or revise.
-		+whatdidwemiss
-hr
++panelRed
+	h4 Anything we missed?
+	p Take one last look and see if there's anything we need to add in or revise.
+	+whatdidwemiss
 
 +panelFrame
 	h4 Signature 
@@ -278,7 +280,13 @@ hr
 	br br
 	p Date:
 
-
+hr
++panelFrame
+	.row
+		.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-5.col-md-4.col-md-offset-4.col-lg-2.col-lg-offset-5
+			.text-center
+				img.img-responsive(src='img/habanero_logo_large_red.png', alt='', align='center')
+			br
 
 
 
