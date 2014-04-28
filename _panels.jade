@@ -2,7 +2,7 @@
 
 mixin panelFrame
 	.row(class=attributes.class, id=attributes.id)
-		.hab-panel.col-md-8.col-md-offset-2
+		.hab-panel.col-md-6.col-md-offset-3
 			block
 
 
@@ -33,7 +33,9 @@ mixin timelineItem
 			block
 			
 mixin accordionPanel(strId, strLabel)
-	div.panel.panel-default
-		div.panel-heading
-			h4.panel-title: a(href="#{strId}", data-toggle="collapse", data-parent="#accordion")= strLabel
-		block
+	.panel.panel-default
+		.panel-heading
+			h4.panel-title: a(href="##{strId}", data-toggle="collapse", data-parent="#accordion")= strLabel
+		.panel-collapse.collapse(id=strId)
+			.panel-body
+				block

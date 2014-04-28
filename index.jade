@@ -1,14 +1,10 @@
+//- Include the mixins for panels and some other helpers
 include _panels.jade
-
-//- welcome
-//-.banner
-	| &nbsp;
 
 +panelRed
 	h4 Welcome to
 	h2 Habanero's presentation of work.
-	p We've thought about what you need and we how can help you get there. Read on for all the details and please let us know what you think &mdash; you can add comments along the way!
-		//-By communicating to you via this web page we aim to make our documentation more readily accessible and more consumable. This WOW effectively communicates our proposal ensuring that all team members from both of our organizations can consume the project structure, the scope, and the approach.
+	p We've thought about what you need and how we can help you get there. Read on for all the details and please let us know what you think &mdash; you can add comments along the way!
 
 +panelFrame
 	h4 WE&nbsp;
@@ -20,7 +16,6 @@ include _panels.jade
 
 	//-small.fine-print.text-muted
 		strong Fine Print
-
 	//-p.text-muted
 		| These imperatives will be supported by a collection of solution com-ponents as listed in the table below. The intranet is for the most part an enabler of the imperatives; it will not drive the imperatives directly per se. There exists a need for organizational change in parallel to this solution, to drive the business outcomes that are sought. For clar-ity, Habanero is NOT anticipating supporting this organizational change outside of delivering the solution.
 
@@ -28,21 +23,20 @@ include _panels.jade
 hr
 
 +panelFrame
-	h4
-		strong key
-		| &nbsp;points
+	h4 key&nbsp;
+		strong points
 	p Here are the highlights from the statement of work (because we know you're busy!):
-	div.row
-		div.col-lg-4
+	.row
+		.col-lg-4
 			+keyPoint(8, "stakeholder interviews")
-		div.col-lg-4	
+		.col-lg-4	
 			+keyPoint(28, "listening labs")
-		div.col-lg-4
+		.col-lg-4
 			+keyPoint(10, "wireframes")
-	div.row
-		div.col-lg-4
+	.row
+		.col-lg-4
 			+keyPoint(6, "weeks")
-		div.col-lg-4
+		.col-lg-4
 			+keyPoint("$55,820", "dollars")
 
 +panelRed
@@ -59,87 +53,58 @@ hr
 				p.text-center Show this QR code at a nearby Starbucks and redeem a free coffee on Habanero.
 				img.img-responsive(src='img/starbucks-qr.jpg', alt='')
 +panelFrame
-	h4
-		| How&nbsp;
+	h4 How&nbsp;
 		strong we'll do it
 
-	div.panel-group#accordion.margin-20
-		+accordionPanel("#collapseD", "Business orientation")
-			div#collapseD.panel-collapse.collapse
-				div.panel-body
-					img.img-responsive(src='img/business-orientation.jpg', alt='')
-					br
-					p We get to know your world. We want to know your purpose, how you get things done, and how your business works.
+	.panel-group#accordion.margin-20
+		+accordionPanel("collapseD", "Business orientation")
+			img.img-responsive(src='img/business-orientation.jpg', alt='')
+			br
+			p We get to know your world. We want to know your purpose, how you get things done, and how your business works.
 
-		//-+accordionPanel("#collapseE", "Site review")
+		//-+accordionPanel("collapseE", "Site review")
 			div#collapseE.panel-collapse.collapse
-				div.panel-body
+				.panel-body
 					p ...
 
-		+accordionPanel("#collapseA", "Stakeholder Interviews")
-			div#collapseA.panel-collapse.collapse
-				div.panel-body
-					img.img-responsive(src='img/stakeholder-interviews.jpg', alt='')
-					br
-					p These are open conversations with the people that are passionate about how the project turns out. We learn about your big ideas for what our project must achieve.
+		+accordionPanel("collapseA", "Stakeholder Interviews")
+			img.img-responsive(src='img/stakeholder-interviews.jpg', alt='')
+			br
+			p These are open conversations with the people that are passionate about how the project turns out. We learn about your big ideas for what our project must achieve.
 
-		+accordionPanel("#collapseB", "Listening labs")
-			div#collapseB.panel-collapse.collapse
-				div.panel-body
-					img.img-responsive(src='img/listening-lab.jpg', alt='')
-					br
-					p Listening labs give us the opportunity to observe you and your colleagues working with your portal. We learn what's working, what sucks, and where to reduce friction.
-		+accordionPanel("#collapseF", "Sketching workshops")
-			div#collapseF.panel-collapse.collapse
-				div.panel-body
-					img.img-responsive(src='img/sketching-workshop-2.jpg', alt='')
-					br
-					p This is where we roll up our sleeves and get out the markers. Let's imagine together what your new portal could be.
+		+accordionPanel("collapseB", "Listening labs")
+			img.img-responsive(src='img/listening-lab.jpg', alt='')
+			br
+			p Listening labs give us the opportunity to observe you and your colleagues working with your portal. We learn what's working, what sucks, and where to reduce friction.
+		+accordionPanel("collapseF", "Sketching workshops")
+			img.img-responsive(src='img/sketching-workshop-2.jpg', alt='')
+			br
+			p This is where we roll up our sleeves and get out the markers. Let's imagine together what your new portal could be.
 
-		+accordionPanel("#collapseC", "Wireframes")
-			div#collapseC.panel-collapse.collapse
-				div.panel-body
-					img.img-responsive(src='img/wireframes.png', alt='')
-					br
-					p We create detailed diagrams with real content to illustrate where you'll find what you need when you need it.
+		+accordionPanel("collapseC", "Wireframes")
+			img.img-responsive(src='img/wireframes.png', alt='')
+			br
+			p We create detailed diagrams with real content to illustrate where you'll find what you need when you need it.
 
-		+accordionPanel("#collapseG", "Mockups")
-			div#collapseG.panel-collapse.collapse
-				div.panel-body
-					img.img-responsive(src='img/enmax-mockup.jpg', alt='')
-					br
-					p This is where our diagrams become pictures showing how your content will look and feel with your unique brand.
-		//-+accordionPanel("#collapseH", "Findings presentation")
-			div#collapseH.panel-collapse.collapse
-				div.panel-body
-					//- img
-					br
-					p ...
+		+accordionPanel("collapseG", "Mockups")
+			img.img-responsive(src='img/enmax-mockup.jpg', alt='')
+			br
+			p This is where our diagrams become pictures showing how your content will look and feel with your unique brand.
+		//-+accordionPanel("collapseH", "Findings presentation")
+			//- img
+			br
+			p ...
 +panelFrame
-	div.row
-		//-div.col-lg-5.col-md-6.col-sm-6
-			h4 Doin' it
-			ul
-				//- Discovery
-				li Business orientation
-				li Site review
-				li Stakeholder interviews
-				li Listening labs
-				li Sketching workshops
-				li Wireframes
-				li Mockups
-				li Findings presentation
-
-		//-div.col-lg-5.col-md-6.col-sm-6
-		div.col-lg-12
+	.row
+		.col-lg-12
 			h4 Not doin' it
 			ul
 				li Detailed functional and technical requirements documentation
 				li Detailed wireframes and mockups
 				li Content strategy
 				li Technical implementation
-	div.row	
-		div.col-lg-12.margin-20
+	.row	
+		.col-lg-12.margin-20
 			h4 By the way...
 			ul
 				li Access to stakeholders and end users is critical to the success of this project. Let's schedule these sessions early!
@@ -150,25 +115,25 @@ hr
 hr
 
 +panelFrame
-	h4 Roles
-	div.row
-		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
+	h4: strong Roles
+	.row
+		.col-md-4.col-lg-2.col-sm-4.col-xs-6
 			img.img-responsive(src='img/girl.png', alt='')
 			p.text-center.title Business Analyst 
-		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
+		.col-md-4.col-lg-2.col-sm-4.col-xs-6
 			img.img-responsive(src='img/guy.png', alt='')
 			p.text-center.title Senior Information Architect
-		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
+		.col-md-4.col-lg-2.col-sm-4.col-xs-6
 			img.img-responsive(src='img/girl.png', alt='')
 			p.text-center.title Service Delivery Manager
-		div.col-md-4.col-lg-2.col-sm-4.col-xs-6
+		.col-md-4.col-lg-2.col-sm-4.col-xs-6
 			img.img-responsive(src='img/guy.png', alt='')
 			p.text-center.title User Experience Lead
 
 hr
 
 +panelFrame
-	h4 Stakeholders
+	h4: strong Stakeholders
 	ul
 		li Kim Blanchett (VP, Office of Public Affairs)
 		li Candace Bourque (Director, Communications)
@@ -192,37 +157,37 @@ hr
 					li Team ramp-up
 					li Scheduling interviews
 		+timelineItem
-			div.timeline-heading
+			.timeline-heading
 				h4.timeline-title Week 1
-			div.timeline-body
+			.timeline-body
 				ul
 					li Project kickoff
 					li Business orientation workshop
 					li Review any existing research
 		+timelineItem
-			div.timeline-heading
+			.timeline-heading
 				h4.timeline-title Week 2
-			div.timeline-body
+			.timeline-body
 				ul
 					li Interviews with AER internal stakeholders
 		+timelineItem
-			div.timeline-heading
+			.timeline-heading
 				h4.timeline-title Week 3
-			div.timeline-body
+			.timeline-body
 				ul
 					li Listening labs with AER employees
 		+timelineItem
-			div.timeline-heading
+			.timeline-heading
 				h4.timeline-title Week 4 - 5
-			div.timeline-body
+			.timeline-body
 				ul
 					li Summarize findings
 					li Complete sketches and high-level wireframes
 					li Create presentation
 		+timelineItem
-			div.timeline-heading
+			.timeline-heading
 				h4.timeline-title Week 6
-			div.timeline-body
+			.timeline-body
 				ul
 					li Presentation to AER
 
@@ -230,53 +195,54 @@ hr
 hr 
 
 +panelFrame
-	h4 What's the damage?
+	h4 What's&nbsp;
+		strong the damage
+		| ?
 	table.table.table-striped
 		thead
 			tr
-				td: strong Role
-				td: strong Effort (hours)
-				td: strong Rate
-				td: strong Cost
+				th Role
+				th Effort (hours)
+				th Rate
+				th.text-right Cost
 		
 		tfoot
 			tr
 				td: strong Total
-				td
-				td 
-				td: strong $55,820
+				td &nbsp;
+				td &nbsp;
+				td.text-right: strong $55,820
 		tbody
 			tr
 				td User Experience Lead
 				td 30
 				td $185
-				td $5,500
+				td.text-right $5,500
 			tr
 				td Senior Information Architect
 				td 130
 				td $185
-				td $24,050
+				td.text-right $24,050
 			tr
 				td Business Analyst
 				td 130
 				td $185
-				td $24,050
+				td.text-right $24,050
 			tr
 				td Service Delivery Manager
 				td 12
 				td $185
-				td $2,220
+				td.text-right $2,220
 
 +panelRed
 	h4 Anything we missed?
-	//-p Take one last look and see if there's anything we need to add in or revise.
 	+whatdidwemiss
 	br
 	p No? Looks good? Let's get busy!
 
 +panelFrame
-	h4 Signature 
-	p By signing below, the parties accept the terms of this document
+	h4: strong Signature 
+	p By signing below, the parties accept the terms of this document.
 	br
 	p Name:
 	br br
@@ -285,9 +251,10 @@ hr
 hr
 +panelFrame
 	.row
-		.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-5.col-md-4.col-md-offset-4.col-lg-2.col-lg-offset-5
+		.col-xs-4.col-xs-offset-4.col-sm-2.col-sm-offset-5.col-md-4.col-md-offset-4.col-lg-4.col-lg-offset-4
 			.text-center
-				img.img-responsive(src='img/habanero_logo_large_red.png', alt='', align='center')
+				a(href='http://habaneroconsulting.com')
+					img.img-responsive(src='img/habanero_logo_large_red.png', alt='', align='center')
 			br
 
 
